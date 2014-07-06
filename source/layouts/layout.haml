@@ -10,8 +10,9 @@
     %title #{current_page.data.title || "Hey!"}
 
     = stylesheet_link_tag "all"
-    = javascript_include_tag "all"
-    %script{async: true,  src: "https://static.medium.com/embed.js"}
 
-    %body
-      = yield
+  %body
+    = yield
+
+  = javascript_include_tag "all"
+  %script{async: true,  src: "https://static.medium.com/embed.js"}
