@@ -1,0 +1,50 @@
+---
+title: Style Tile
+---
+
+.row-fluid
+  .col-lg-2.col-md-2
+    .main-nav
+      .logo
+        = image_tag 'logo.png', width: '100px';
+      %nav
+        %ul
+          %li
+            %a{href: '#'} Blog
+          %li
+            %a{href: '#'} Portfolio
+          %li
+            %a{href: '#'} About
+
+  .col-lg-7.col-md-7.main-content
+    %h1 Heading Number 1
+    %h2 Heading Number 2
+    %h3 Heading Number 3
+    %h4 Heading Number 4
+    %h5 Heading Number 5
+    %h6 Heading Number 6
+    %p
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus.
+
+    %blockquote
+      This is a sample quote
+
+    %a{href: "#"}
+      Sample Hyperlink
+
+    .color-pallete
+      %ul
+        %li
+          .header
+            Header
+        %li
+          .paragraph
+            Paragraph
+        %li
+          .navigation
+            Navigation
+        %li
+          .header
+            Header
+  .col-lg-3.col-md-3.no-gutter
+    = image_tag 'ejay-solo-vertical.png', width: '100%'

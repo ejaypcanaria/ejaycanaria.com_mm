@@ -1,0 +1,136 @@
+$icon-font-path: '../fonts/bootstrap/';
+@import 'bootstrap';
+
+$color-header: #333;
+$color-paragraph: #555;
+$color-navigation: #DDD;
+$color-navigation-hover: darken(#DDD, 50%);
+$color-link: darken($color-paragraph, 10%);
+$color-link-hover: darken($color-link, 10%);
+
+$ff-header: "Helvetica Neue", Helvetica, sans-serif;
+$ff-paragraph: Georgia, Calibri, serif;
+$ff-navigation: Calibri, "Helvetica Neue", sans-serif   ;
+
+body {
+    font-family: $ff-paragraph;
+    background-color: lighten(#E5E5E5, 50%);
+}
+
+a {
+    color: $color-link;
+    text-decoration: underline;
+    font-size: 90%;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+.main-content {
+    padding: 20px 7% 0px;
+    font-size: 1.35em;
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        color: $color-paragraph;
+        line-height: 1.6em;
+        text-align: justify;
+        margin: 1em 0;
+        font-weight: lighter;
+    }
+
+    b {
+        color: darken($color-paragraph, 15%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $ff-header;
+        font-weight: normal;
+    }
+
+    h1 {
+        color: $color-header;
+        font-size: 2em;
+        margin: 1em 0;
+    }
+
+    h2 {
+        font-size: 1.35em;
+        color: lighten($color-header, 10%);
+        margin: 1em 0 0.2em 0;
+    }
+
+
+    blockquote {
+        font-size: 1.25em;
+        line-height: 1.5em;
+        font-weight: lighter;
+        color: lighten($color-paragraph, 30%);
+        font-style: italic;
+    }
+
+    .medium-favourite {
+        margin: 1%;
+        width: 100%;
+    }
+
+    .other-links {
+        a {
+            text-decoration: none;
+
+            img {
+                width: 75px;
+                border: 5px solid #333;
+                border-radius: 50px;
+                display: inline-block;
+                margin: 1em;
+            }
+        }
+    }
+
+    .footer {
+        margin: 0 auto;
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        border-top: 1px solid #CCC;
+        font-size: 0.7em;
+    }
+}
+
+.main-nav {
+    font-family: $ff-header;
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: right;
+
+    ul {
+        list-style-type: none;
+        line-height: 2em;
+        li > a {
+            color: $color-navigation;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                color: $color-navigation-hover;
+            }
+        }
+    }
+}
+
+.no-gutter {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+

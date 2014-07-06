@@ -1,0 +1,114 @@
+---
+title: Ejay Canaria
+---
+
+.row-fluid
+  .col-lg-2.col-md-2.col-sm-2.col-xs-12
+    .main-nav
+      .logo
+        = image_tag 'logo.png', width: '100px';
+      %nav
+        %ul
+          %li
+            %a{href: '#', :'data-target' => '#Blog'} Blog
+          %li
+            %a{href: '#', :'data-target' => '#About'} About
+
+  .col-lg-7.col-md-7.col-sm-10.col-xs-12.main-content
+    .row
+      .col-xs-12
+
+        %h1 Curiosity Follower, Programmer.
+        %p
+          I am
+          %b Ejay Canaria
+          a software engineer based in the Philippines. I'm not sure what a good introduction is. Maybe let's just discuss why I'm a curiousity follower and what type of programmer I am.
+
+        %h2 Curiosity Follower
+        %p I've been a fan of self learning after I graduated in college. When I saw the real world, I realized that there are tons of things I need to learn, especially in my field of study - software engineering. I study things that I find interesting. I read books (which I usually don't do back in school), watch tutorials and get my hands dirty in coding.
+
+        %p I followed my curiousity ever since. As the old adage said,
+
+        %blockquote Life is a continuous process of learning.
+
+        %p So, don't stop.
+
+        %h2 Programmer
+        %p I code for human - from user experience and under the hood. I believe in KISS (Keep It Simple, Stupid) and YAGNI (You Ain't Gonna Need It). Beauty is just simplicity. I love to write readable codes. Codes that do not need comments. Codes that explain itself.
+
+        %blockquote
+          Good code is like good joke - it needs no explanation.
+
+        %p I'm still in the process of improving it day by day and I'm getting there. Lately I changed my wallpaper to this:
+
+        %blockquote
+          Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+
+    .row#Blog
+      .col-xs-12
+        %h1 Blog
+
+        %p
+          I decided to blog in
+          %a{href: 'https://medium.com/@ejaypcanaria', target: '_blank'} Medium.
+          I love the fonts and its simplicity. It just works. This is where I share my experiences in life, in my profession as a programmer and maybe something about my taste of music. You can checkout my collection in Medium below:
+        %p
+          %a{class: "m-collection", href: "https://medium.com/ejays-stories", :'data-width' => "100%", :'data-border' => "false", :'data-collapsed' => "false"} Ejay’s Stories
+
+        %p
+          So far my favourite stories are:
+        %p
+          .row
+            .col-lg-6.col-md-6.col-sm-6.col-xs-12
+              .medium-favourite
+                %a{class: "m-story", href: "https://medium.com/ejays-stories/so-i-started-blogging-35af0bda60e3", :'data-width' => "100%", :'data-border' => "false", :'data-collapsed' => "true"} So I Started Blogging…
+            .col-lg-6.col-md-6.col-sm-6.col-xs-12
+              .medium-favourite
+                %a{class: "m-story", href: "https://medium.com/ejays-stories/songs-in-times-of-frustration-c80010c55d5a", :'data-width' => "100%", :'data-border' => "false", :'data-collapsed' => "true"} Songs in Times of Frustration
+        %p
+          Make sure you follow me on Medium if you have an account there. I'll follow you back!
+    .row#About
+      .col-xs-12
+        %h1 About
+        %p
+          My real name is
+          %b Edgardo P. Canaria Jr.
+          They usually call me
+          %b Ejay
+          because Edgardo not just sounds old but it's a bit long as well. What does Ejay stands for? You're wrong. It's not Edgardo Jr. My mother told me that she read the name Ejay in a pocket book and decided to have that as my nickname. It actually stands for nothing.
+        %p
+          = image_tag 'childhood.jpg'
+
+        %p
+          I was born in Cavite, Philippines. I grew up in a town in Cavite called Rosario. I live in Mandaluyong, Manila during weekdays and in my hometown in Rosario during weekends.
+
+        %p
+          I play the guitar. I learned how to play it back in high school with my friends. We always dreamt of having a band back then.
+
+        %p
+          I took
+          %b Information Technology
+          in college and graduated in 2012. I ended up a programmer. I'm lucky to find the things I love doing early in my career. I love being a programmer. I'm currently doing my stuffs in
+          %a{href: 'http://rubyonrails.org/', target: '_blank'} Ruby on Rails.
+
+        %p
+          You can also find me in:
+        %p
+          .other-links
+            %a{href: 'https://github.com/ejaypcanaria/', target: '_blank', alt: 'Github', title: 'Github'}
+              = image_tag 'github.png'
+            %a{href: 'http://www.quora.com/Ejay-Canaria', target: '_blank', alt: 'Quora', title: 'Quora'}
+              = image_tag 'quora.png'
+            %a{href: 'https://www.facebook.com/iamejay', target: '_blank', alt: 'Facebook', title: 'Facebook'}
+              = image_tag 'facebook.png'
+            %a{href: 'http://ph.linkedin.com/pub/edgardo-jr-canaria/68/916/b3a', target: '_blank', alt: 'LinkedIn', title: 'LinkedIn'}
+              = image_tag 'linkedin.png'
+            %a{href: 'https://twitter.com/iamejay', target: '_blank', alt: 'Twitter', title: 'Twitter'}
+              = image_tag 'twitter.png'
+        %p
+          .footer
+            Handcrafted by me using
+            %a{href: 'http://middlemanapp.com/', target: '_blank'} Middleman
+  .col-lg-3.col-md-3.no-gutter
+    .hidden-sm.hidden-xs
+      = image_tag 'ejay-solo-vertical.png', width: '100%', style: 'margin-top: 40px;'
