@@ -55,6 +55,8 @@ set :images_dir, 'images'
 
 set :haml, { ugly: true, format: :html5 }
 
+sprockets.append_path File.join root, 'bower_components'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
