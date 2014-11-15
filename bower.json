@@ -1,0 +1,19 @@
+{
+  "name": "ejaycanaria.com_mm",
+  "version": "2.0.0",
+  "authors": [
+    "Ejay Canaria <ejaypcanaria@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.2.0",
+    "velocity": "~1.1.0"
+  }
+}
