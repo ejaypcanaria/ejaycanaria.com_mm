@@ -1,7 +1,7 @@
 // $icon-font-path: '../fonts/bootstrap/';
 @import 'bootstrap';
 
-$ff-logo: Bebas, Helvetica, sans-serif;
+$ff-header: Bebas, Helvetica, sans-serif;
 $ff-nav: Simplifica, 'Open Sans', sans-serif;
 $ff-main: 'Open Sans', Helvetica, sans-serif;
 
@@ -30,16 +30,16 @@ a {
 
 #wrapper {
     #logo {
-        font-family: $ff-logo;
+        font-family: $ff-header;
         font-size: 3em;
         letter-spacing: 0.1em;
         text-align: center;
-        margin: 20px -55px 0 20px;
+        margin: 20px 0 20px;
         padding-bottom: 30px;
         border-bottom: 1px solid #DDD;
 
-        .img {
-            display: inline-block;
+        #logo-img {
+            margin-left: 55px;
         }
     }
 
@@ -65,7 +65,7 @@ a {
 
     #footer {
         border-top: 1px solid #CCC;
-        margin-top: 60px;
+        margin-top: 30px;
         padding: 20px
     }
 
@@ -79,12 +79,34 @@ a {
             line-height: 1.65em;
             text-align: justify;
 
+            .display-photo {
+                text-align: center;
+                img {
+                    width: 200px;
+                }
+                .short-desc {
+                    font-style: italic;
+                    font-size: 1.25em;
+                    color: #999;
+                    margin-bottom: 30px;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
             h1 {
-                font-family: $ff-nav;
+                // font-family: $ff-nav;
+                font-family: $ff-header;
                 font-size: 2.2em;
-                letter-spacing: 0.1em;
+                // letter-spacing: 0.1em;
                 color: #333;
                 text-align: center;
+
+                &.page-title {
+                    font-family: $ff-header;
+                }
             }
 
             blockquote {
@@ -95,17 +117,21 @@ a {
                 border-color: $color-link;
             }
 
-        }
 
-        .display-photo {
-            text-align: center;
+            .other-links {
+                text-align: center;
+                margin-top: 30px;
 
-            .short-desc {
-                font-style: italic;
-                font-size: 1.25em;
-                color: #999;
-                margin-bottom: 30px;
+                img {
+                    width: 50px;
+                }
+
+                a {
+                    margin-right: 30px;
+                }
             }
         }
+
+
     }
 }

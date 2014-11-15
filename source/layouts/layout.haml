@@ -15,20 +15,21 @@
     .container#wrapper
       .row#logo
         .col-xs-12
-          Ejay
-          %a#home-btn{href: '/'}
-            .img= image_tag 'logo_hex.png', width: '130px'
-          Canaria
+          #logo-img
+            Ejay
+            %a#home-btn{href: '/'}
+              = image_tag 'logo_hex.png', width: '130px'
+            Canaria
       .row#content-area
         .row#navigation
           .col-xs-12
             %ul
               %li
-                %a#about-btn{href: '#about!'} About
+                %a{href: '/about'} About
               %li
-                %a#blog-btn{href: '#blog!'} Blog
+                %a{href: '#'} Blog
               %li
-                %a#cv-btn{href: '#cv!'} CV
+                %a{href: '#'} CV
         .row#main-content
           .col-xs-8.col-xs-offset-2
             = yield
