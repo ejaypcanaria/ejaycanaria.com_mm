@@ -12,7 +12,32 @@
     = stylesheet_link_tag "all"
 
   %body
-    = yield
+    .container#wrapper
+      .row#logo
+        .col-xs-12
+          Ejay
+          %a#home-btn{href: '/'}
+            .img= image_tag 'logo_hex.png', width: '130px'
+          Canaria
+      .row#content-area
+        .row#navigation
+          .col-xs-12
+            %ul
+              %li
+                %a#about-btn{href: '#about!'} About
+              %li
+                %a#blog-btn{href: '#blog!'} Blog
+              %li
+                %a#cv-btn{href: '#cv!'} CV
+        .row#main-content
+          .col-xs-8.col-xs-offset-2
+            = yield
+        .row#footer
+          .col-xs-12
+            Handcrafted using
+            %a{href: 'http://getbootstrap.com/', target: '_blank'} Bootstrap
+            and
+            %a{href: 'http://middlemanapp.com/', target: '_blank'} Middleman
 
   = javascript_include_tag "all"
   %script{async: true,  src: "https://static.medium.com/embed.js"}
