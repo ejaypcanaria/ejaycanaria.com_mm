@@ -10,6 +10,8 @@
     %title #{current_page.data.title || "Hey!"}
 
     = stylesheet_link_tag "all"
+    = javascript_include_tag "all"
+    %script{async: true,  src: "https://static.medium.com/embed.js"}
 
   %body
     .container#wrapper
@@ -39,6 +41,3 @@
             %a{href: 'http://getbootstrap.com/', target: '_blank'} Bootstrap
             and
             %a{href: 'http://middlemanapp.com/', target: '_blank'} Middleman
-
-  = javascript_include_tag "all"
-  %script{async: true,  src: "https://static.medium.com/embed.js"}
