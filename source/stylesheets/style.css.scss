@@ -157,62 +157,93 @@ a {
         }
     }
 
-    .skill {
-        display: inline-block;
-        padding: 5px 15px 1px;
-        color: #FFF;
-        border-radius: 20px;
-        text-transform: uppercase;
-        line-height: 1.1em;
-        font-family: $ff-header;
-        font-weight: normal;
-        font-size: 0.85em;
+    #skills {
 
-        &.back-end {
-            border: 1px solid $red;
-            color: $red;
+        &.tldr {
+            text-align: center;
+
+            .p {
+                display: inline;
+                span { display: none };
+
+                .skill {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
+
+                .github {
+                    display: block;
+                    margin-top: 30px;
+                }
+            }
         }
 
-        &.front-end {
-            border: 1px solid $yellow;
-            color: $yellow;
-        }
+        .skill {
+            display: inline-block;
+            padding: 5px 15px 1px;
+            color: #FFF;
+            border-radius: 20px;
+            text-transform: uppercase;
+            line-height: 1.1em;
+            font-family: $ff-header;
+            font-weight: normal;
+            font-size: 0.85em;
 
-        &.provisioning {
-            border: 1px solid $violet;
-            color: $violet;
-        }
+            &.back-end {
+                border: 1px solid $red;
+                color: $red;
+            }
 
-        &.other {
-            border: 1px solid $green;
-            color: $green;
+            &.front-end {
+                border: 1px solid $yellow;
+                color: $yellow;
+            }
+
+            &.provisioning {
+                border: 1px solid $violet;
+                color: $violet;
+            }
+
+            &.other {
+                border: 1px solid $green;
+                color: $green;
+            }
         }
     }
 
-    .job {
-        margin-bottom: 30px;
-        text-align: center;
+    #experience {
 
-        .title {
-            font-size: 1.35em;
-            font-weight: bold;
+        &.tldr {
+            .desc {
+                display: none;
+            }
         }
 
-        .tenure {
-            font-style: italic;
-            color: #999;
-        }
+        .job {
+            margin-bottom: 30px;
+            text-align: center;
 
-        .desc {
-            text-align: justify;
-            margin-top: 30px;
-
-            .highlight {
-                margin-top: 20px;
+            .title {
+                font-size: 1.35em;
+                font-weight: bold;
             }
 
-            ul {
-                margin-top: 20px;
+            .tenure {
+                font-style: italic;
+                color: #999;
+            }
+
+            .desc {
+                text-align: justify;
+                margin-top: 30px;
+
+                .highlight {
+                    margin-top: 20px;
+                }
+
+                ul {
+                    margin-top: 20px;
+                }
             }
         }
     }
