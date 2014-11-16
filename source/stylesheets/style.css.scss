@@ -40,7 +40,7 @@ a {
         display: none;
 
         #logo-img {
-            margin-left: 55px;
+            margin-left: 0;
         }
     }
 
@@ -99,16 +99,11 @@ a {
             }
 
             h1 {
-                // font-family: $ff-nav;
                 font-family: $ff-header;
                 font-size: 2.2em;
-                // letter-spacing: 0.1em;
                 color: #333;
                 text-align: center;
-
-                &.page-title {
-                    font-family: $ff-header;
-                }
+                margin: 1em 0;
             }
 
             blockquote {
@@ -136,4 +131,15 @@ a {
 
 
     }
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        #logo {
+            #logo-img {
+                margin-left: 55px;
+            }
+        }
+    }
+
 }

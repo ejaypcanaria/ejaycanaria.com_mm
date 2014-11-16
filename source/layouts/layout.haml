@@ -18,26 +18,27 @@
       .row#logo
         .col-xs-12
           #logo-img
-            Ejay
+            %span.hidden-xs Ejay
             %a#home-btn{href: '/'}
               = image_tag 'logo_hex.png', width: '130px'
-            Canaria
+            %span.hidden-xs Canaria
       .row#content-area
-        .row#navigation
-          .col-xs-12
-            %ul
-              %li
-                %a{href: '/about'} About
-              %li
-                %a{href: '/blog'} Blog
-              %li
-                %a{href: '#'} CV
-        .row#main-content
-          .col-xs-8.col-xs-offset-2
-            = yield
-        .row#footer
-          .col-xs-12
-            Handcrafted using
-            %a{href: 'http://getbootstrap.com/', target: '_blank'} Bootstrap
-            and
-            %a{href: 'http://middlemanapp.com/', target: '_blank'} Middleman
+        .col-xs-12
+          .row#navigation
+            .col-xs-12
+              %ul
+                %li
+                  %a{href: '/about'} About
+                %li
+                  %a{href: '/blog'} Blog
+                %li
+                  %a{href: '#'} CV
+          .row#main-content
+            .col-md-8.col-md-offset-2.col-xs-12
+              = yield
+          .row#footer
+            .col-xs-12
+              Handcrafted using
+              %a{href: 'http://getbootstrap.com/', target: '_blank'} Bootstrap
+              and
+              %a{href: 'http://middlemanapp.com/', target: '_blank'} Middleman
