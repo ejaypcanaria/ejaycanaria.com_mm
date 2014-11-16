@@ -58,6 +58,7 @@ set :images_dir, 'images'
 set :haml, { ugly: true, format: :html5 }
 
 sprockets.append_path File.join root, 'bower_components'
+sprockets.append_path File.join root, 'bower_components/fontawesome/fonts'
 
 # Build-specific configuration
 configure :build do

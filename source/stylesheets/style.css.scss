@@ -8,6 +8,11 @@ $ff-main: 'Open Sans', Helvetica, sans-serif;
 $color-link: #52B3D9;
 $color-hover: darken($color-link, 25%);
 
+$red: #D64541;
+$yellow: #F5AB35;
+$violet: #674172;
+$green: #1BBC9B;
+
 html, body {
     -webkit-font-smoothing: antialiased;
     font-family: $ff-main;
@@ -106,6 +111,18 @@ a {
                 margin: 1em 0;
             }
 
+            h2 {
+                font-family: $ff-nav;
+                text-transform: uppercase;
+                font-size: 1.65em;
+                letter-spacing: 0.2em;
+                text-align: center;
+
+                &:before, &:after {
+                    content: "—"
+                }
+            }
+
             blockquote {
                 text-align: left;
                 font-size: 1.2em;
@@ -127,9 +144,58 @@ a {
                     margin-right: 30px;
                 }
             }
+
+            section {
+                margin-bottom: 3em;
+
+                h2 {
+                    margin-bottom: 1em;
+                }
+                .p {
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+
+    .skill {
+        display: inline-block;
+        padding: 5px 15px 1px;
+        color: #FFF;
+        border-radius: 20px;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        font-family: $ff-header;
+        font-weight: normal;
+        font-size: 0.85em;
+
+        // border: 1px solid $color-link;
+        // color: $color-link;
+
+
+        &.back-end {
+            // background-color: $red;
+            border: 1px solid $red;
+            color: $red;
         }
 
+        &.front-end {
+            // background-color: $yellow;
+            border: 1px solid $yellow;
+            color: $yellow;
+        }
 
+        &.provisioning {
+            // background-color: $violet;
+            border: 1px solid $violet;
+            color: $violet;
+        }
+
+        &.other {
+            // background-color: $green;
+            border: 1px solid $green;
+            color: $green;
+        }
     }
 }
 
