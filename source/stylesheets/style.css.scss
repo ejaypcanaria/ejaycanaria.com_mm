@@ -264,8 +264,10 @@ a {
     }
 
     #interest {
+        text-align: center;
         ul {
             padding: 0;
+
             li {
                 list-style-type: none;
                 display: inline-block;
@@ -273,8 +275,6 @@ a {
                 padding: 2px 15px;
                 margin: 0;
                 border-radius: 20px;
-                float: left;
-                margin-right: 10px;
                 margin-bottom: 10px;
             }
         }
