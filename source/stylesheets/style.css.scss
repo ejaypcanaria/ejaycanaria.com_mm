@@ -32,7 +32,22 @@ a {
     }
 }
 
+.text-center { text-align: center; }
+
 #wrapper {
+    #tldr-toggle {
+        font-size: 0.9em;
+
+        .fa-toggle-on  { display: none; }
+        .fa-toggle-off { display: inline-block; }
+
+        &.on {
+            .fa-toggle-on  { display: inline-block; }
+            .fa-toggle-off { display: none; }
+        }
+    }
+
+
     #logo {
         font-family: $ff-header;
         font-size: 3em;
