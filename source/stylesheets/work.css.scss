@@ -1,0 +1,33 @@
+#wrapper #main-content #work {
+    h2.page-title {
+        margin: 30px 0 15px;
+        font-size: 3em;
+        font-family: Simplifica, 'Open Sans', sans-serif;
+        letter-spacing: 0.1em;
+    }
+
+    .fork-me {
+        text-align: center;
+        margin-left: -35px;
+        margin-bottom: 10px;
+
+        a {
+            .fa {
+                color: #333;
+                font-size: 1.5em;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    #skills {
+        font-size: 0.85em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        font-style: italic;
+        margin-bottom: 1.5em;
+    }
+}
