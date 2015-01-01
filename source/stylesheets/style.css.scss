@@ -312,6 +312,7 @@ a {
     }
 }
 
+// Small devices
 @media (min-width: 768px) {
     #wrapper {
         #logo {
@@ -320,5 +321,39 @@ a {
             }
         }
     }
+}
 
+// Extra small devices
+@media (max-width: 767px) {
+    #wrapper {
+        #content-area {
+            #main-content {
+                padding: 15px;
+
+                h1 {
+                    margin: 0 0 1em;
+                }
+
+                section {
+                    h2 {
+                        font-size: 1.65em;
+                    }
+                }
+            }
+
+            #navigation {
+                ul {
+                    padding: 0 0 0 15px;
+
+                    li {
+                        margin-right: 25px;
+
+                        a {
+                            font-size: 2.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
